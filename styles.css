@@ -11453,3 +11453,18 @@ li {
 .list-item-4 {
   text-align: right;
 }
+
+
+/* ----------------------------
+CONTACT PAGE
+-------------------------------*/
+
+
+.image-4 {
+    position: static;
+    width: 30%;
+    margin-right: 40px;
+    border-radius: 6px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
