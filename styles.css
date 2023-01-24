@@ -10867,21 +10867,15 @@ summary {
   background-color: #fff;
 }
 
-/* article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-} */
+.w-container:before,
+.w-container:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
 .w-nav {
   background: #dddddd;
   z-index: 1000;
@@ -11454,17 +11448,101 @@ li {
   text-align: right;
 }
 
+/* ----------------------------
+ABOUT PAGE
+-------------------------------*/
+
+.image-4 {
+  position: static;
+  width: 30%;
+  margin-right: 40px;
+  border-radius: 6px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.div-block-5 {
+  padding-left: 0px;
+}
+
+.paragraph-light.cc-position-name {
+  margin-bottom: 5px;
+  font-family: AvenirLTProLight, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.paragraph-light {
+  opacity: 0.6;
+  /* font-family: AvenirLTProLight, sans-serif; */
+  color: #1a1a1a;
+  /* font-size: 18px;
+  line-height: 25px;
+  font-weight: 300; */
+}
+
+.heading-4 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Ogg, "Times New Roman", sans-serif;
+  color: #1a1a1a;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.paragraph-light {
+  opacity: 0.6;
+  font-family: AvenirLTProLight, sans-serif;
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.position-name-text {
+  margin-bottom: 10px;
+  font-family: Avenirltprobook, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: none;
+}
 
 /* ----------------------------
 CONTACT PAGE
 -------------------------------*/
 
+.feature-section.contact {
+  min-height: 85vh;
+}
 
-.image-4 {
-    position: static;
-    width: 30%;
-    margin-right: 40px;
-    border-radius: 6px;
-    -o-object-fit: contain;
-    object-fit: contain;
+.flex-container-2 {
+  /* display: -webkit-box;
+  display: -webkit-flex; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  /* -webkit-flex-direction: row;
+  -ms-flex-direction: row; */
+  /* flex-direction: row; */
+  -webkit-box-align: start;
+  /* -webkit-align-items: flex-start; */
+  /* -ms-flex-align: start; */
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  /* -webkit-flex: 1;
+  -ms-flex: 1; */
+  /* flex: 1; */
+}
+
+.form-block {
+  margin-top: 44px;
+  margin-bottom: 120px;
+}
+
+.w-form {
+  margin: 0 0 15px;
 }
