@@ -5,7 +5,19 @@
   box-sizing: border-box;
   /* max-width: 940px; */
 }
+@font-face {
+  font-family: "AvenirLTProLight";
+  src: url(fonts/AvenirLTProLight.otf);
+}
+@font-face {
+  font-family: "AvenirLTProBook";
+  src: url(fonts/AvenirLTProBook.otf);
+}
 
+@font-face {
+  font-family: "AvenirLTProMedium";
+  src: url(fonts/AvenirLTProMedium.otf);
+}
 @import url(https://d3e54v103j8qbb.cloudfront.net/fonts/inter/inter.s3.3a4044b2f3.css);
 
 .w-reset,
@@ -11503,7 +11515,7 @@ ABOUT PAGE
 
 .position-name-text {
   margin-bottom: 10px;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   font-size: 20px;
   line-height: 34px;
   font-weight: 400;
@@ -11724,7 +11736,7 @@ element.style {
 
 .position-name-text {
   margin-bottom: 10px;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   font-size: 20px;
   line-height: 34px;
   font-weight: 400;
@@ -11831,7 +11843,7 @@ I.MAA
 
 .position-name-text-2 {
   margin-bottom: 10px;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   color: #1a1a1a;
   font-size: 20px;
   line-height: 34px;
@@ -12027,6 +12039,168 @@ figure {
   grid-column-start: 1;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+/* -----------------------
+VIVIHEALTH
+---------------------------*/
+
+#w-node-cb4d91fa-fc11-b398-4c6e-a5409283a7d2-58af7e4c {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+.heading-jumbo-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Ogg, "Times New Roman", sans-serif;
+  font-size: 44px;
+  line-height: 80px;
+  font-weight: 500;
+  text-transform: none;
+}
+.paragraph-light-3 {
+  opacity: 0.6;
+  font-family: AvenirLTProLight, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#w-node-cb4d91fa-fc11-b398-4c6e-a5409283a7d7-58af7e4c {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+}
+
+.position-name-text-3 {
+  margin-bottom: 10px;
+  font-family: AvenirLTProBook, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.paragraph-light-3.cc-position-name {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.paragraph-light-3 {
+  opacity: 0.6;
+  font-family: AvenirLTProLight, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#w-node-cb4d91fa-fc11-b398-4c6e-a5409283a7dc-58af7e4c {
+  -ms-grid-column: 3;
+  grid-column-start: 3;
+  -ms-grid-column-span: 2;
+  grid-column-end: 5;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+}
+
+.detail-header-image {
+  width: 60%;
+  margin-top: -129px;
+  margin-right: 0px;
+  margin-left: 300px;
+  font-weight: 500;
+}
+
+#w-node-_502f5e7d-cc81-a2c0-7b95-3452a47cd9ab-58af7e4c {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+#w-node-_502f5e7d-cc81-a2c0-7b95-3452a47cd9ad-58af7e4c {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+.position-name-text-4 {
+  margin-bottom: 10px;
+  font-family: AvenirLTProBook, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+#w-node-b1fde238-2282-979a-eee6-fdcfc874238e-58af7e4c {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+#w-node-_502f5e7d-cc81-a2c0-7b95-3452a47cd9ad-58af7e4c {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+.paragraph-light-5 {
+  opacity: 0.6;
+  font-family: AvenirLTProLight, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.position-name-text-5 {
+  margin-bottom: 10px;
+  font-family: AvenirLTProBook, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+#w-node-_5980e0c8-0b33-3e3e-4be5-d3e9ecf3aad7-58af7e4c {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
   -ms-grid-row: 1;
   grid-row-start: 1;
   -ms-grid-row-span: 1;
