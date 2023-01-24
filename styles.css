@@ -20,6 +20,11 @@
 }
 
 @font-face {
+  font-family: "AvenirLTProHeavy";
+  src: url(fonts/AvenirLTProHeavy.otf);
+}
+
+@font-face {
   font-family: "Ogg-Medium";
   src: url(fonts/Ogg-Medium.ttf);
 }
@@ -10880,13 +10885,17 @@ summary {
   display: block;
 }
 
-.container-3 {
-  width: 100%;
-}
 .w-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;
+}
+.container-3 {
+  width: 100%;
+}
+.w-nav {
+  background: #dddddd;
+  z-index: 1000;
 }
 .navbar {
   position: sticky;
@@ -10902,10 +10911,6 @@ summary {
   grid-row-start: 1;
   grid-column-end: 2;
   grid-row-end: 2;
-}
-.w-nav {
-  background: #dddddd;
-  z-index: 1000;
 }
 
 .w-nav-menu {
@@ -11128,9 +11133,9 @@ FEATURE SECTION
 }
 
 .link-block-3 {
-    width: 40%;
-    color: #333;
-    text-decoration: none;
+  width: 40%;
+  color: #333;
+  text-decoration: none;
 }
 
 a:-webkit-any-link {
@@ -11257,6 +11262,19 @@ CONTACT FORM
   color: #1a1a1a;
 }
 
+.feature-image-2 {
+  width: 80%;
+  height: 100%;
+  border-radius: 6px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.div-block-6 {
+  width: 100%;
+}
 .heading-3.big-heading-font {
   font-size: 44px;
   font-weight: 500;
@@ -11317,6 +11335,18 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   cursor: default;
+}
+
+.text-field-3 {
+  border-radius: 4px;
+  font-family: AvenirLTProBook, sans-serif;
+}
+.field-label-4 {
+  font-family: AvenirLTProHeavy, sans-serif;
+}
+
+.field-label-5 {
+  font-family: AvenirLTProHeavy, sans-serif;
 }
 
 .text-field-4 {
@@ -11416,22 +11446,6 @@ FOOTER
   background-color: #f4f4f4;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
 .nav-grid {
   /* display: -ms-grid; */
   display: grid;
@@ -11529,7 +11543,7 @@ ABOUT PAGE
 .heading-4 {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: Ogg, "Times New Roman", sans-serif;
+  font-family: Ogg-Medium, "Times New Roman", sans-serif;
   color: #1a1a1a;
   font-size: 36px;
   font-weight: 500;
@@ -11582,13 +11596,13 @@ CONTACT PAGE
   /* flex: 1; */
 }
 
+.w-form {
+  margin: 0 0 15px;
+}
+
 .form-block {
   margin-top: 44px;
   margin-bottom: 120px;
-}
-
-.w-form {
-  margin: 0 0 15px;
 }
 
 /* -----------------------
