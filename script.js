@@ -1,5 +1,6 @@
 btnStorage = document.querySelector(".btn-storage");
 
 btnStorage.addEventListener("click", function () {
-  window.open("storage-com.html");
+  console.log("i'm clicked");
+  //   window.open("storage-com.html");
 });
