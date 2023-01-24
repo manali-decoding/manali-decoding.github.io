@@ -18,6 +18,21 @@
   font-family: "AvenirLTProMedium";
   src: url(fonts/AvenirLTProMedium.otf);
 }
+
+@font-face {
+  font-family: "Ogg-Medium";
+  src: url(fonts/Ogg-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Ogg-Light";
+  src: url(fonts/Ogg-Light.ttf);
+}
+
+@font-face {
+  font-family: "Ogg-Regular";
+  src: url(fonts/Ogg-Regular.ttf);
+}
 @import url(https://d3e54v103j8qbb.cloudfront.net/fonts/inter/inter.s3.3a4044b2f3.css);
 
 .w-reset,
@@ -876,7 +891,7 @@ also rich-text.less has its own sprite-sheet */
 .w-editor-selectize-dropdown [data-selectable] .w-editor-highlight {
   background: rgba(125, 168, 208, 0.2);
   font-weight: 800;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   border-radius: 1px;
 }
 .w-editor-selectize-dropdown [data-selectable],
@@ -1415,7 +1430,7 @@ also rich-text.less has its own sprite-sheet */
   font-style: italic;
 }
 .w-codemirror .cm-link {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .w-codemirror .cm-strikethrough {
   text-decoration: line-through;
@@ -1832,7 +1847,7 @@ also rich-text.less has its own sprite-sheet */
   background-color: #cf313b;
 }
 .w-codemirror .cm-s-webflow-material .CodeMirror-matchingbracket {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: white !important;
 }
 .w-virtualized {
@@ -3028,7 +3043,7 @@ also rich-text.less has its own sprite-sheet */
   opacity: 0.6;
 }
 .w-editor-bem-Link-underline {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .w-editor-bem-Link-disabled {
   cursor: default;
@@ -4806,7 +4821,7 @@ also rich-text.less has its own sprite-sheet */
   .w-editor-option
   .w-editor-highlight {
   background: transparent;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: white;
 }
 .w-editor-bem-TagSelect i.w-editor-search-big {
@@ -5833,7 +5848,7 @@ also rich-text.less has its own sprite-sheet */
   margin-right: 20px;
 }
 .w-editor-bem-FileDropZone .w-editor-bem-Link {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #363636;
 }
 .w-editor-bem-FileDropZone .w-editor-bem-Link:hover {
@@ -6475,7 +6490,7 @@ also rich-text.less has its own sprite-sheet */
 }
 .w-editor-message-inner a {
   color: white;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .w-editor-message-inner-success {
   background: #2eb26b;
@@ -9387,7 +9402,7 @@ also rich-text.less has its own sprite-sheet */
   user-select: text !important;
 }
 .w-editor-bem-RichTextInput_Content a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .w-editor-bem-RTToolbar {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -10775,7 +10790,7 @@ html [class*="w-editor-edit"] .w-editor-bem-RichTextInput .w-embed > * {
   color: -webkit-link;
 }
 [href-disabled-underline] {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .w-dyn-list figure.w-richtext-figure-type-video > div:after,
 .w-rte-editable figure.w-richtext-figure-type-video > div:after,
@@ -11009,7 +11024,7 @@ HERO
 }
 
 .heading.big-heading-font {
-  font-family: Ogg, "Times New Roman", sans-serif;
+  font-family: Ogg-Medium, "Times New Roman", sans-serif;
   font-size: 120px;
   font-weight: 500;
 }
@@ -11026,7 +11041,7 @@ h1 {
   line-height: 44px;
   margin-top: 20px;
   margin-bottom: 10px;
-  margin: 0.67em 0;
+  margin: 20px 0;
 }
 
 .paragraph.paragraph-font {
@@ -11095,16 +11110,33 @@ FEATURE SECTION
   width: 70%;
   margin-right: 0px;
 }
+.feature-image {
+  display: block;
+  width: 100%;
+  margin-right: 41px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -o-object-fit: fill;
+  object-fit: fill;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
 
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
 }
 
+.link-block-3 {
+    width: 40%;
+    color: #333;
+    text-decoration: none;
+}
+
 a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 feature-image {
   display: block;
@@ -11126,13 +11158,13 @@ feature-image {
 }
 
 .heading-2.big-heading-font {
-  font-family: Ogg, "Times New Roman", sans-serif;
+  font-family: Ogg-Regular, "Times New Roman", sans-serif;
 }
 
 .heading-2 {
   margin-top: 16px;
   margin-bottom: 32px;
-  font-family: Ogg, "Times New Roman", sans-serif;
+  font-family: Ogg-Regular, "Times New Roman", sans-serif;
   font-size: 60px;
   font-weight: 400;
   text-align: left;
@@ -11153,7 +11185,7 @@ h2 {
 }
 
 .paragraph-2.paragraph-font {
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -11181,7 +11213,7 @@ h2 {
 
 .text-block {
   margin-top: 16px;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   font-weight: 300;
 }
 
@@ -11207,7 +11239,7 @@ h2 {
   padding: 16px 24px;
   border-radius: 5px;
   background-color: #98009b;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   color: #f7f7f7;
   font-size: 24px;
   font-weight: 400;
@@ -11221,7 +11253,7 @@ CONTACT FORM
 .contact-form-2 {
   padding-top: 100px;
   padding-bottom: 100px;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   color: #1a1a1a;
 }
 
@@ -11249,7 +11281,7 @@ CONTACT FORM
 
 .paragraph-3 {
   padding-top: 25px;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   font-size: 36px;
   font-weight: 300;
 }
@@ -11288,7 +11320,7 @@ label {
 }
 
 .text-field-4 {
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
 }
 
 .w-input,
@@ -11834,7 +11866,7 @@ I.MAA
 
 .paragraph-light-2 {
   opacity: 0.6;
-  font-family: Avenirltprobook, sans-serif;
+  font-family: AvenirLTProBook, sans-serif;
   color: #1a1a1a;
   font-size: 16px;
   line-height: 25px;
