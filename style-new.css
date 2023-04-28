@@ -180,11 +180,9 @@ img {
   padding: 0;
   width: 100%; */
   max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-  border: 0;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  /* display: inline-block; */
+  /* overflow-clip-margin: content-box;
+  overflow: clip; */
 }
 
 .border {
@@ -390,40 +388,6 @@ figcaption {
   /* letter-spacing: 2px; */
 }
 
-.w-form {
-  margin: 0 0 15px;
-}
-
-.contact-form-grid-2 {
-  display: grid;
-  margin-top: 40px;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  /* -ms-grid-columns: 1fr 1fr; */
-  grid-template-columns: 1fr 1fr;
-  /* -ms-grid-rows: auto; */
-  grid-template-rows: auto;
-}
-
-.field-label {
-  font-family: "Karla", sans-serif;
-  font-weight: 900;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-  /* font-weight: bold; */
-  cursor: default;
-}
-
-/******* MOBILE STYLES ******/
-
-/* header {
-  background: url("../img/background-clipping-mask.jpg") no-repeat center center
-    fixed #fff;
-} */
-
 .logo {
   width: 50%;
 }
@@ -490,11 +454,19 @@ nav ul {
 }
 
 .flex {
+  display: flex;
   margin: 0;
 }
+
 .project {
+  width: 30%;
+  height: auto;
   padding: 50px 25px 25px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 50px;
+  vertical-align: middle;
   background: var(--projectBg);
 }
 
@@ -527,7 +499,7 @@ nav ul {
   padding: 0.5rem 1.5rem;
   width: max-content;
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.02rem;
 }
@@ -724,8 +696,278 @@ li {
    Modify as content requires.
    ========================================================================== */
 
-/******* TABLET STYLES ******/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fixed-nav-bar {
+    height: 10%;
+  }
+  .logo img {
+    display: none;
+  }
 
+  nav ul {
+    margin: 30px 0 0 0;
+    font-size: 1.2em;
+  }
+
+  .headline {
+    padding-top: 80px;
+  }
+
+  .name {
+    font-size: 1.5em;
+  }
+
+  #about {
+    padding-bottom: 0px;
+  }
+  #about__text p {
+    font-size: 1.4em;
+  }
+  #about__flex {
+    text-align: center;
+  }
+
+  #about__img {
+    max-width: 50%;
+  }
+
+  #about__headline {
+    padding-top: 20px;
+    font-size: 1.8em;
+  }
+
+  .language-tech-wrapper ul {
+    padding: 3rem;
+  }
+
+  .category-header {
+    font-size: 2em;
+  }
+
+  .social-icons {
+    padding-top: 30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) && (max-width: 768px) {
+  .headline {
+    padding-top: 80px;
+  }
+
+  .name {
+    font-size: 1.5em;
+  }
+
+  .project__title {
+    font-size: 2rem;
+  }
+
+  #about {
+    padding-bottom: 0px;
+  }
+  #about__flex {
+    text-align: center;
+  }
+
+  #about__img {
+    max-width: 50%;
+  }
+
+  #about__headline {
+    padding-top: 20px;
+    font-size: 1.8em;
+  }
+  #about__text p {
+    font-size: 1.4em;
+  }
+  .language-tech-wrapper ul {
+    padding: 5rem;
+  }
+
+  .category-header {
+    font-size: 2em;
+  }
+
+  .social-icons {
+    padding-top: 30px;
+  }
+  .social-icons p {
+    font-size: 2rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) && (max-width: 992px) {
+  .headline {
+    padding-top: 80px;
+  }
+
+  .name {
+    font-size: 1.8em;
+  }
+
+  .greeting {
+    font-size: 1.8em;
+  }
+
+  .project__title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.75rem;
+  }
+  #about {
+    padding-bottom: 0px;
+  }
+  #about__flex {
+    text-align: center;
+  }
+
+  #about__img {
+    max-width: 50%;
+  }
+
+  #about__headline {
+    padding-top: 40px;
+    font-size: 1.8em;
+  }
+
+  #about__text p {
+    font-size: 1.4em;
+  }
+
+  .category-header {
+    font-size: 2.3em;
+  }
+
+  .language-tech-wrapper ul {
+    padding: 2rem;
+  }
+
+  #tech-skills i {
+    font-size: 5em;
+  }
+
+  .social-icons {
+    padding-top: 30px;
+  }
+
+  .social-icons p {
+    font-size: 3rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) && (max-width: 1200px) {
+  .headline {
+    padding-top: 80px;
+  }
+
+  .name {
+    font-size: 1.8em;
+  }
+
+  .greeting {
+    font-size: 1.8em;
+  }
+  #about {
+    padding-bottom: 0px;
+  }
+  #about__flex {
+    text-align: center;
+  }
+
+  #about__img {
+    max-width: 50%;
+  }
+
+  #about__headline {
+    padding-top: 40px;
+    font-size: 2rem;
+  }
+
+  #about__text p {
+    font-size: 1.6rem;
+  }
+
+  .category-header {
+    font-size: 2.5rem;
+  }
+
+  .language-tech-wrapper ul {
+    padding: 6rem;
+  }
+  #tech-skills i {
+    font-size: 6rem;
+  }
+
+  .social-icons {
+    padding-top: 30px;
+  }
+
+  .social-icons p {
+    font-size: 3rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+    .headline {
+    padding-top: 80px;
+  }
+
+  .name {
+    font-size: 1.8em;
+  }
+
+  .greeting {
+    font-size: 1.8em;
+  }
+  #about{
+    padding-bottom: 0px;
+  }
+  #about__flex{
+    text-align: center;
+  }
+
+  #about__img{
+    max-width: 50%;
+  }
+
+  #about__headline {
+    padding-top:40px;
+    font-size: 1.8em;
+  }
+
+  #about__text p{
+    font-size: 1.4em;
+  }
+
+  .category-header{
+    font-size: 2.3em;
+  }
+   .language-tech-wrapper ul{
+    padding: 10rem;
+  }
+
+  #tech-skills i{
+    font-size: 6em;
+  }
+
+  .social-icons{
+    padding-top: 30px;
+  }
+  
+  .social-icons p{
+    font-size: 3rem;
+  };
+} */
+
+/******* TABLET STYLES ******/
+/* 
 @media only screen and (min-width: 768px) {
   header {
     padding-bottom: 80px;
@@ -736,7 +978,6 @@ li {
   }
 
   .fixed-nav-bar {
-    /* height: 85px; */
     padding: 15px 0;
   }
 
@@ -767,19 +1008,21 @@ li {
 
   .base-margin {
     margin: 30px 0 20px;
-  }
+  } */
 
-  @keyframes slide-up {
-    100% {
-      transform: translateY(0);
-    }
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+@keyframes slide-up {
+  100% {
+    transform: translateY(0);
   }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*
   .headline {
     color: var(--textBlack);
     margin: 100px 0 0 0;
@@ -793,10 +1036,9 @@ li {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-}
+} */
 
-.vertical-center {
-  /* margin: auto 0; */
+/* .vertical-center {
   margin-left: 40px;
   margin-right: 40px;
   width: 100%;
@@ -847,9 +1089,9 @@ li {
 
 #about__img {
   /* margin: 50px auto 80px; */
-  display: block;
+/* display: block;
   border: white solid 15px;
-}
+} */
 
 #contact__header {
   padding-bottom: 30px;
@@ -864,10 +1106,8 @@ li {
 .contact {
   text-align: center;
 }
+*/
 
-h3 {
-  /* font-size: 1.65rem; */
-}
 
 /*****************************************
 Footer
@@ -953,9 +1193,9 @@ Footer
     padding-bottom: 0px;
   }
 
-  .project {
+  /* .project {
     width: 30%;
-  }
+  } */
 
   h3 {
     font-size: 1.3rem;
@@ -999,9 +1239,6 @@ Footer
     font-weight: 400;
   }
 
-  #about__img {
-    /* margin: 63px auto; */
-  }
   #about {
     padding-bottom: 20px;
   }
@@ -1020,23 +1257,14 @@ Footer
     margin: 0 0 10px;
     font-size: 0.875rem;
   }
-
-  /* Thank You Page */
-  #thanks-headline {
-    padding-bottom: 30px;
-  }
-
-  #thanks-subtext {
-    padding-bottom: 80px;
-  }
 }
 
-@media print,
+/* @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices 
+} */
 
 /* ==========================================================================
    Print styles.
@@ -1044,18 +1272,18 @@ Footer
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+/* @media print {
   *,
   *::before,
   *::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    box-shadow: none !important;
+/* box-shadow: none !important;
     text-shadow: none !important;
-  }
+  } */
 
-  a,
+/* a,
   a:visited {
     text-decoration: underline;
   }
@@ -1066,13 +1294,13 @@ Footer
 
   abbr[title]::after {
     content: " (" attr(title) ")";
-  }
+  }  */
 
-  /*
+/*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
+/* a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
   }
@@ -1085,13 +1313,13 @@ Footer
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
-  }
+  } */
 
-  /*
+/*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
+/* thead {
     display: table-header-group;
   }
 
@@ -1110,5 +1338,5 @@ Footer
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
+  } 
+}*/
