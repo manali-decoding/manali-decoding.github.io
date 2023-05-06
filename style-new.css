@@ -427,7 +427,7 @@ img {
 
 /* ------------------------ CASE STUDIES ---------------------------------- */
 .container {
-  width: 100%;
+  width: 85%;
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
@@ -498,6 +498,7 @@ img {
 
 .project-overview-text {
   margin-bottom: 10px;
+  /* margin-left: 70px; */
   font-family: "Karla", sans-serif;
   font-size: 20px;
   line-height: 34px;
@@ -508,21 +509,20 @@ img {
 .section-2 {
   position: static;
   margin-right: 30px;
-  margin-left: 30px;
-  text-align: left;
+  /* margin-left: 30px; */
+  text-align: center;
 }
 
 .detail-header-image {
-  width: 60%;
-  margin-top: 60px;
-  margin-right: 0px;
-  margin-left: 300px;
+  width: 80%;
+  margin: 0 auto;
   font-weight: 500;
 }
 
 .project-description-grid {
-  margin-top: 120px;
+  margin-top: 80px;
   margin-bottom: 120px;
+  text-align: left;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-areas:
@@ -532,6 +532,10 @@ img {
   grid-template-columns: 1fr 2.5fr;
   /* -ms-grid-rows: auto; */
   grid-template-rows: auto;
+}
+
+.work-position-wrap {
+  margin-left: 70px;
 }
 
 .w-layout-grid {
@@ -554,11 +558,19 @@ img {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 figcaption {
   margin-top: 5px;
+  margin-bottom: 100px;
   text-align: center;
+  font-family: "Karla", sans-serif;
+}
+
+#w-list {
+  grid-area: Area;
+  list-style: disc;
   font-family: "Karla", sans-serif;
 }
 
@@ -598,9 +610,13 @@ a:visited {
   text-align: center;
 }
 
+#tech-skills p {
+  font-size: 1rem;
+  text-align: center;
+}
 .language-tech-wrapper ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-flow: row wrap;
   padding: 0.675em;
 }
