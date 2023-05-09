@@ -409,7 +409,7 @@ img {
   font-size: 2em;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0;
   letter-spacing: 0.1rem;
   padding-top: 60px;
 }
@@ -417,8 +417,8 @@ img {
 .contact a {
   color: var(--textBlack);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 1.3em;
 }
 .contact {
   text-align: center;
@@ -439,7 +439,7 @@ img {
   font-family: "Montserrat", sans-serif;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
   text-align: left;
@@ -502,10 +502,11 @@ img {
 .project-overview-text {
   margin-bottom: 10px;
   /* margin-left: 70px; */
-  font-family: "Karla", sans-serif;
+  /* font-family: "Karla", sans-serif; */
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 34px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: none;
 }
 
@@ -648,7 +649,7 @@ li {
 
 .social-icons p {
   padding: 0 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .social-icons a {
@@ -844,7 +845,7 @@ li {
   }
 
   .social-icons p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -896,7 +897,7 @@ li {
     padding: 0 50px;
   }
   .content-wrapper {
-    padding: 140px 100px;
+    /* padding: 140px 100px; */
     margin: 0 auto;
   }
 
@@ -983,7 +984,7 @@ li {
   }
   .social-icons p {
     font-size: 1.75rem;
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .copyright p {
     text-align: center;
