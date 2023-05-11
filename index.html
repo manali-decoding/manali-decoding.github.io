@@ -1,177 +1,339 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Manali.design</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
-        media="all" />
-    <script type="text/javascript">
-        WebFont.load({
-            google: {
-                families: [
-                    "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
-                ],
-            },
-        });
-    </script>
-    <script type="text/javascript">
-        !(function (o, c) {
-            var n = c.documentElement,
-                t = " w-mod-";
-            (n.className += t + "js"),
-                ("ontouchstart" in o ||
-                    (o.DocumentTouch && c instanceof DocumentTouch)) &&
-                (n.className += t + "touch");
-        })(window, document);
-    </script>
-    <link href="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/620597b3aef2b6d90f62cd94_favicon-bg.png"
-        rel="shortcut icon" type="image/x-icon" />
-    <script src="jquery-3.6.1.min.js"></script>
+    <meta charset="utf-8">
+    <title>Manali Joshi | Web Developer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content=""> -->
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Merriweather:wght@900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Square+Peg&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN version 5.5 -->
+    <script src="https://kit.fontawesome.com/6161d93014.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style-new.css">
+
+
+    <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
 
 <body>
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-        role="banner" class="navbar w-nav">
-        <div class="container-3 w-container">
-            <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" aria-current="page"
-                    class="nav-caps w-nav-link w--current" style="max-width: 940px;">Home</a><a href="/about"
-                    class="nav-caps w-nav-link" style="max-width: 940px;">About</a><a
-                    href="https://designsbymanali.medium.com/" target="_blank" class="nav-caps w-nav-link"
-                    style="max-width: 940px;">Blog</a><a href="/contact" class="nav-caps w-nav-link"
-                    style="max-width: 940px;">Contact</a></nav>
-            <div class="w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0"
-                aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-                <div class="w-icon-nav-menu"></div>
-            </div>
-        </div>
-        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-    </div>
-    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    <!-- Add your site or application content here -->
+    <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script> -->
 
+    <header>
+        <div class="content-wrapper">
+            <nav id="main">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- <i class="fas fa-code" aria-hidden="true"></i> -->
+                        <img src="/imgaes/logo_black.png" alt="manali's logo">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="hamburger-btn">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </label>
+                <ul class="nav-list">
+                    <li class="active"><a href="#projects">Coding</a></li>
+                    <li class="active"><a href="#design">Design</a></li>
+                    <li class="active"><a href="#skills">Skills</a></li>
+                    <li class="active"><a href="#about">About</a></li>
+                    <li class="active"><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
 
-    <!-- HEADER -->
-    <header id="hero" class="hero-2 wf-section">
-        <div class="flex-container w-container">
-            <div>
-                <h1 class="heading big-heading-font">Hi,I'm Manali</h1>
-                <p class="paragraph paragraph-font">UX/Product Designer and UI design Tutor.</p>
-            </div>
-            <div class="hero-image-mask"><img
-                    src="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61eb5cd9fe8a9786821ceca2_manali_profile_1%201.png"
-                    width="233" alt="Manali's Profile Picture" class="hero-image">
+            <!-- <div class="logo">
+                    <a href="index.html">
+                        <!-- <i class="fas fa-code" aria-hidden="true"></i> -->
+            <!-- <img src="/imgaes/m_logo.png" alt="manali's logo"> -->
+            <!-- </a> -->
+            <!-- </div> -->
+            <!-- <ul>
+                <li class="nav__item"><a href="#projects">Coding</a></li>
+                <li class="nav__item"><a href="#design">Design</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#about">About</a></li>
+                <li class="nav__link"><a href="#contact">Contact Me</a></li>
+            </ul> -->
+
+            </nav>
+            <div class="hero slide-up">
+                <h1 class="headline">Hi, I&#8217;m Manali.</h1>
+                <h2 class="greeting">a Web Developer & UX Designer </span></h2>
             </div>
         </div>
     </header>
-    <section id="feature-section" class="feature-section wf-section">
-        <div class="flex-container w-container">
-            <a href="storage-com.html" class="feature-image-mask w-inline-block"><img
-                    src="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image.png"
-                    sizes="(max-width: 479px) 91vw, (max-width: 991px) 60vw, 598.1812744140625px"
-                    srcset="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-500.png 500w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-800.png 800w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-1080.png 1080w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-1600.png 1600w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-2000.png 2000w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-2600.png 2600w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image-p-3200.png 3200w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef29865a626a17ad37f25e_Storage.com_Hero_Image.png 6216w"
-                    alt="Storage.com's hero image
-                    " class="feature-image"></a>
-            <a href="storage-com.html" class="link-block w-inline-block">
-                <h2 class="heading-2 big-heading-font">Storage.com</h2>
-                <p class="paragraph-2 paragraph-font">Web App for Finding Storage Units Nearby</p>
-                <div class="text-block secondary-heading-font">UX Design, UI&nbsp;Design</div>
-                <div class="button btn-storage">
-                    <div class="text-block-3 button-font">View Project</div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section id="feature-section" class="feature-section wf-section">
-        <div class="flex-container w-container">
-            <a href="i-maa.html" class="feature-image-mask w-inline-block"><img
-                    src="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero.png"
-                    sizes="(max-width: 479px) 91vw, (max-width: 991px) 60vw, 598.1812744140625px"
-                    srcset="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero-p-500.png 500w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero-p-800.png 800w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero-p-1080.png 1080w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero-p-1600.png 1600w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero-p-2000.png 2000w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61f36ed6ca32d200eba10f34_imaa-hero.png 2044w"
-                    alt="2 iPhone mockups for I.maa. One is welcome screen and the other is categories screen.
-                    " class="feature-image">
-            </a>
-            <a href="i-maa.html" class="link-block w-inline-block">
-                <h2 class="heading-2 big-heading-font">I.maa</h2>
-                <p class="paragraph-2 paragraph-font">A postpartum chatbot to help new moms transition through their
-                    postpartum journey</p>
-                <div class="text-block secondary-heading-font">UX Design, UI&nbsp;Design</div>
-                <div class="button">
-                    <div class="text-block-3 button-font">View Project</div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section id="feature-section" class="feature-section wf-section">
-        <div class="flex-container w-container">
-            <a href="#" class="feature-image-mask w-inline-block">
-                <img src="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef3368e563db0d311131e5_60d4a4d8bd772fa5b5d2b0e0_60c2ee7a271dea5daa416857_mycrypto-01%20(1).jpg"
-                    sizes="(max-width: 479px) 91vw, (max-width: 991px) 60vw, 598.1812744140625px"
-                    srcset="https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef3368e563db0d311131e5_60d4a4d8bd772fa5b5d2b0e0_60c2ee7a271dea5daa416857_mycrypto-01%20(1)-p-500.jpeg 500w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef3368e563db0d311131e5_60d4a4d8bd772fa5b5d2b0e0_60c2ee7a271dea5daa416857_mycrypto-01%20(1)-p-800.jpeg 800w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef3368e563db0d311131e5_60d4a4d8bd772fa5b5d2b0e0_60c2ee7a271dea5daa416857_mycrypto-01%20(1)-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/61e9d7b2906787693a80b430/61ef3368e563db0d311131e5_60d4a4d8bd772fa5b5d2b0e0_60c2ee7a271dea5daa416857_mycrypto-01%20(1).jpg 1400w"
-                    alt="ViviHealth's hero image
-            " class="feature-image">
-            </a>
-            <a href="vivihealth.html" class="link-block-3 w-inline-block">
-                <h2 class="heading-2">ViviHealth</h2>
-                <p class="paragraph-2 paragraph-font">A platform that supports people in recovery from addiction</p>
-                <div class="text-block secondary-heading-font">UI&nbsp;Design</div>
-                <div class="button">
-                    <div class="text-block-3 button-font">View Project</div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section id="contact-form" class="contact-form-2 wf-section">
-        <div class="w-container">
-            <h2 class="heading-3 big-heading-font">Let's work together!</h2>
-            <p class="paragraph-3 secondary-heading-font">Drop me a line!</p>
-            <div class="w-form">
-                <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Wf Form Contact Form"
-                    method="get" aria-label="Wf Form Contact Form">
-                    <div class="contact-form-grid-2">
-                        <div id="w-node-_8e8cc9c0-0303-9df9-4a6c-4c09149fc43e-149fc435">
-                            <label for="First-Name-2" id="contact-first-name"
-                                class="field-label label-font">Name</label><input type="text"
-                                class="text-field-4 w-input" maxlength="256" name="First-Name-2"
-                                data-name="First Name 2" placeholder="Enter your name here" id="First-Name-2"
-                                required="">
-                        </div>
-                        <div id="w-node-_8e8cc9c0-0303-9df9-4a6c-4c09149fc442-149fc435"><label for="Last-Name-2"
-                                id="contact-last-name" class="field-label-2 label-font">Email Address</label><input
-                                type="text" class="w-input" maxlength="256" name="Last-Name-2" data-name="Last Name 2"
-                                placeholder="Enter your email address here" id="Last-Name-2" required=""></div>
-                        <div id="w-node-_8e8cc9c0-0303-9df9-4a6c-4c09149fc446-149fc435"><label for="Message-2"
-                                id="contact-message" class="field-label-3 label-font">Message</label>
-                            <textarea data-name="Message 2" maxlength="5000" id="Message-2" name="Message-2"
-                                placeholder="Enter your message here" required="" class="w-input"></textarea>
-                        </div>
-                    </div><input type="submit" value="Submit" data-wait="Please wait..."
-                        class="button button-font w-button">
-                </form>
-                <div class="w-form-done" tabindex="-1" role="region" aria-label="Wf Form Contact Form success">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div class="w-form-fail" tabindex="-1" role="region" aria-label="Wf Form Contact Form failure">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
+
+
+
+    <section id="about">
+        <div class="content-wrapper" id="about__flex">
+            <img id="about__img" src="imgaes/manali_profile_1 1.png" alt="Manali Joshi front end developer">
+            <div id="about__text">
+                <!-- <h2 class="category-header" id="about__about">About</h2> -->
+                <h3 id="about__headline">I'm a Web Developer and a UX Designer based in Seattle,
+                    Washington.</h3>
+                <p>Whether it is UX design or programming a new application, I
+                    have a creative side that I have always enjoyed exploring and growing. Whether I’m working on
+                    low-fidelity wireframes or building high-quality web UI, I find ways to empathize with users
+                    through research and
+                    in-depth understanding of the problem at hand.
+                    As a UX designer, I understand user experience best practices and design fundamentals to make
+                    strategically sound decisions. This makes me a right fit to build interfaces with a deep
+                    understanding of how people interact with them.
+                    User’s experience is very important to me, so I
+                    strive to craft an interface that is innovative, visually appealing, and intuitive for everyone.
+                </p>
             </div>
         </div>
     </section>
-    <header id="nav" class="sticky-nav">
-        <nav class="w-container">
-            <ul role="list" class="nav-grid w-list-unstyled">
-                <li><a href="https://www.linkedin.com/in/manali-joshi/" target="_blank" class="nav-link">LINKEDIN</a>
-                </li>
-                <li><a href="https://medium.com/@designsbymanali" target="_blank" class="nav-link">MEDIUM</a></li>
-                <li><a href="https://www.instagram.com/manali.fit.design/" target="_blank"
-                        class="nav-link">INSTAGRAM</a></li>
-                <li id="w-node-a0b20d45-1e42-ecae-5db5-447e4b085f81-fc691bd1" class="list-item-4">© Manali Joshi 2023
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <section class="content-wrapper" id="projects">
+        <h2 class="category-header" id="project-header">Coding Projects</h2>
+        <div class="flex">
+            <article class="project">
+                <div>
+                    <a href="http://manali.design/plantdex/" target="_blank"><img class="border"
+                            src="imgaes/plantDex.png" alt="PlantDex screenshot"></a>
+                    <h3 class="project__title">PlantDex</h3>
+                    <p>A simple PlantDex built by using jQuery to display all the
+                        houseplants database. By clicking on individual houseplant user can see all their care
+                        information in the modal window.</p>
+                    <p class="no-margin"><span>Skills: </span>HTML5, CSS3, JavaScript, jQuery</p>
+                    <p><span>Tools: </span>VS Code, Figma</p>
+                </div>
+                <div>
+                    <div class="vertical-center">
+                        <a class="btn" href="http://manali.design/plantdex/" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div>
+                    <a href="https://codepen.io/manalij/full/LxbYwJ" target="_blank"><img class="border"
+                            src="/mockups/to-do-list.png" alt="To Do List in jQuery"></a>
+                    <h3 class="project__title">To Do List</h3>
+                    <p>A simple To Do List made with jQuery where items can be added to the list and deleted with simple
+                        click.</p>
+                    <p class="no-margin"><span>Skills: </span>#HTML, #CSS, #jQuery</p>
+                    <p><span>Tools: </span>Codepen,Figma</p>
+                </div>
+                <div>
+                    <div class="vertical-center">
+                        <a class="btn" href="https://codepen.io/manalij/full/LxbYwJ" target="_blank">View Project on
+                            Codepen</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div>
+                    <a href="https://codepen.io/manalij/full/dyjJVLo" target="_blank"><img class="border"
+                            src="/mockups/our-menu.png" alt="Our Menu laptop"></a>
+                    <h3 class="project__title">Menu</h3>
+                    <p>A javascript project displaying the menu items dynamically based on the filtering options.
+                    </p>
+                    <p class="no-margin"><span>Skills: </span>#javascript, #jQuery&nbsp;</p>
+                    <p><span>Tools: </span>Codepen</p>
+                </div>
+                <div>
+                    <div class="vertical-center">
+                        <a class="btn" href="https://codepen.io/manalij/full/dyjJVLo" target="_blank">View
+                            Project on Codepen</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <h2 class="category-header" id="design">Design Projects</h2>
+        <div class="flex">
+            <article class="project">
+                <div>
+                    <a href="#" target="_blank"><img class="border" src="/imgaes/Storage.com/hero.png"
+                            alt="Storage.com hero"></a>
+                    <h3 class="project__title">Storage.com</h3>
+                    <p>Web App for finding storage units nearby</p>
+                    <p class="no-margin"><span>Skills: </span>UI Design, UX Design</p>
+                    <p><span>Tools: </span>Figma, Sketch, InVision</p>
+                </div>
+                <div>
+                    <div class="vertical-center">
+                        <a class="btn" href="storage-com.html" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div>
+                    <a href="#" target="_blank"><img class="border" src="/imgaes/I.maa/imaa-hero.png"
+                            alt="I.maa hero"></a>
+                    <h3 class="project__title">I.maa</h3>
+                    <p>A postpartum chatbot to help new moms transition through their postpartum journey</p>
+                    <p class="no-margin"><span>Skills: </span>UX Design, UI Design, Wireframing, Design System;
+                    </p>
+                    <p><span>Tools: </span>Figma</p>
+                </div>
+                <div>
+                    <div class="vertical-center">
+                        <a class="btn" href="i-maa.html" target="_blank">View Project </a>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div>
+                    <a href="/vivihealth.html" target="_blank"><img class="border"
+                            src="/imgaes/vivihealth/60beb71752ce604e7259a9b4_ViviHealth_all.png"
+                            alt="ViviHealth hero"></a>
+                    <h3 class="project__title">ViviHealth</h3>
+                    <p>A platform that supports people in recovery from addiction</p>
+                    <p class="no-margin"><span>Skills: </span>UI Design</p>
+                    <p><span>Tools: </span>Figma</p>
+                </div>
+                <div>
+                    <div class="vertical-center">
+                        <a class="btn" href="/vivihealth.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="tech-skills">
+        <div class="tech-wrapper">
+            <h2 class="category-header" id="skills">Skills & Tools</h2>
+            <div class="language-tech-wrapper">
+                <ul>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </p>
+                        <p class="icon-description">
+                            HTML5
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </p>
+                        <p class="icon-description">
+                            CSS3
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-square-js"></i>
+                        </p>
+                        <p class="icon-description">
+                            JavaScript
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-react"></i>
+                        </p>
+                        <p class="icon-description">
+                            React
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </p>
+                        <p class="icon-description">
+                            Git
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </p>
+                        <p class="icon-description">
+                            APIs
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-figma"></i>
+                        </p>
+                        <p class="icon-description">
+                            Figma
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-sketch"></i>
+                        </p>
+                        <p class="icon-description">
+                            Sketch
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fontawesome-icon">
+                            <i class="fa-brands fa-invision"></i>
+                        </p>
+                        <p class="icon-description">
+                            InVision
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer id="contact">
+        <div class="content-wrapper" id="footer-wrapper">
+            <h2 class="category-header" id="contact__header">Let&#8217;s Connect</h2>
+            <div class="contact">
+                <a id="email" href="mailto:manalidecoding@gmail.com" target="_blank">manalidecoding@gmail.com</a>
+                <div>
+                    <div class="social-icons">
+                        <p><a href="https://www.linkedin.com/in/manali-joshi/" target="blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></p>
+                        <p><a href="https://github.com/manali-decoding" target="blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Manali Joshi | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="/script.js"></script>
 </body>
+
 
 </html>
