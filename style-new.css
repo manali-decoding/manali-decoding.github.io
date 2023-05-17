@@ -901,6 +901,9 @@ li {
     margin: 0 auto;
   }
 
+  #about__img {
+    margin-top: 0px;
+  }
   h1,
   .category-header {
     padding-top: 100px;
