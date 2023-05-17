@@ -896,6 +896,11 @@ li {
     justify-content: flex-end;
     padding: 0 50px;
   }
+  
+  #about__img {
+     margin-top: 0;
+  }
+   
   .content-wrapper {
     /* padding: 140px 100px; */
     margin: 0 auto;
